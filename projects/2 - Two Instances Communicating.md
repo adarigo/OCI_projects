@@ -13,7 +13,7 @@ I used port 9000.
 Instance one run:  
   ~$ nc -lp 9000  
 Instance two run:  
-  ~$ nc <host-public-ip> 9000  
+  ~$ nc [host-public-ip] 9000  
 
 It doesn't work.  
 
@@ -30,7 +30,7 @@ Try netcat again.
 Host instance run:  
   ~$ nc -lp 9000  
 Client instance run:  
-  ~$ nc <host-public-ip> 9000  
+  ~$ nc [host-public-ip] 9000  
 
 Both instances should now be waiting and ready to either send or receive messages.  
 When sending a message, it will appear on the other instance.  
