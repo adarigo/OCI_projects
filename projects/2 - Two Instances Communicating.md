@@ -19,8 +19,9 @@ It doesn't work.
 
 I discovered about the need to make changes to the security lists VCN and firewall within the instances.  
 For the VCN security list, an ingress rule must be applied to allow all IPs to connect to port 9000 over TCP.
-In the host instance, the one that is initially listening on netcat, the command below must be added.
+In both instances the command below must be added.
   ~$ sudo iptables -A INPUT -p tcp --dport 9000 -j ACCEPT  
+The input chain in the firewall now allows TCP over port 9000.  
 
 Check the tables.  
   ~$ sudo iptables -L INPUT  
