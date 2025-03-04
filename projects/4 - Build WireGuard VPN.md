@@ -5,7 +5,7 @@ First step is to load up an instance.
 As usual, default settings with Ubuntu are sufficient and save the private key.  
 I named my instance Host VPN for fun.
 SSH into the instance with your device and run the update and upgrade commands.  
-Also include this one:
+Also include this one:  
 ~$ sudo apt install wireguard  
 This gets WireGuard into our system.  
 The setup from here gets a little tricky.  
