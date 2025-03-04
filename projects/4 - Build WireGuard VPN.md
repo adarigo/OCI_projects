@@ -22,16 +22,17 @@ Here we need to set a few things in the file.
 Copy and paste the following:  
 
 [Interface]
-PrivateKey =                         Address = 192.168.10.1/24  
+PrivateKey =  
+Address = 192.168.10.1/24  
 ListenPort = 51820  
 PostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -A FORWARD -o wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o ens3 -j MASQUERADE  
 PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -D FORWARD -o wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o ens3 -j MASQUERADE  
 
 [Peer]
-PublicKey = 
+PublicKey =  
 AllowedIPs = 192.168.10.2/32
 
-The interface requires a private key from the instance which can be generated.
+The interface requires a private key from the instance which can be generated.  
 ~ $ wg genkey | tee privatekey | wg pubkey > publickey  
 
 This creates two files, privatekey and publickey.  
