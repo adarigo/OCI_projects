@@ -1,3 +1,5 @@
+# Getting Started with OCI
+
 Learned about what OCI is and how it compares to other cloud providers.  
 Created an account and began to explore the main page.  
 First step was to create a virtual machine.  
