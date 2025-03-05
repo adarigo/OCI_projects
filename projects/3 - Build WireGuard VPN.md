@@ -1,4 +1,4 @@
-# Building a WireGuard VPN
+# Building a WireGuard VPN between phone and Instance
 
 I wanted to build a VPN server for myself, due to its real practical everyday use and that the free tier is OCI makes this extremely doable.  
 I did some research into the types of VPNs I could go with, and I decided on using WireGuard because it was said to be the simplest one to setup as a private VPN.
